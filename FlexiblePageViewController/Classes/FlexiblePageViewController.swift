@@ -17,7 +17,7 @@ public protocol FlexiblePageViewDataSource: class {
 
 public protocol FlexiblePageViewDelegate: class {
 
-  func flexiblePageView(_ view: FlexiblePageViewController, lastIndex index: Int)
+  func flexiblePageView(_ pageView: FlexiblePageViewController, lastIndex index: Int)
 
 }
 
@@ -122,7 +122,7 @@ public class FlexiblePageViewController: UIPageViewController,
     guard let dataSource = pageDataSource else { return }
     for i in 0 ..< 3 {
       let index = currentIndex + i - 1
-      guard let data = dataSource.flexiblePageView(self, dataAt: index) else { return }
+      guard let data = dataSource.flexiblePageView(self, dataAt: index) else { continue }
       let extras = ["data": data]
       pages[index % 3].set(extras)
     }
@@ -137,10 +137,4 @@ public class FlexiblePageViewController: UIPageViewController,
     return view
   }
 
-}
-
-extension UIViewController {
-
-  func set(_ extras: [String: Any]) {}
-  
 }
