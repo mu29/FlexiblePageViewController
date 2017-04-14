@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FlexiblePageViewController_Example' do
+  pod 'FlexiblePageViewController', :path => '../'
+
+  target 'FlexiblePageViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
