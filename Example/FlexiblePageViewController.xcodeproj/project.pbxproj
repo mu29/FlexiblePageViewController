@@ -536,10 +536,6 @@
 			baseConfigurationReference = 9FB5792BB2A6D1AAC3C61341 /* Pods-FlexiblePageViewController_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = AVXKHR4MKC;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -557,10 +553,6 @@
 			baseConfigurationReference = FF9F330E90CB2C8182FA2E30 /* Pods-FlexiblePageViewController_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = AVXKHR4MKC;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
