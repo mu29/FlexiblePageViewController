@@ -54,12 +54,8 @@ public class FlexiblePageViewController: UIPageViewController,
     }
   }
 
-  override public init(
-    transitionStyle style: UIPageViewControllerTransitionStyle = .scroll,
-    navigationOrientation: UIPageViewControllerNavigationOrientation = .horizontal,
-    options: [String : Any]? = nil
-  ) {
-    super.init(transitionStyle: style, navigationOrientation: navigationOrientation, options: options)
+  public init(options: [String : Any]? = nil) {
+    super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: options)
   }
 
   required public init?(coder: NSCoder) {

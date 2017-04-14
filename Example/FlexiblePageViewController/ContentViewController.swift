@@ -15,6 +15,7 @@ class ContentViewController: UIViewController {
 
   var content: String = ""
 
+  // Need to receive data from pager
   override func set(_ extras: [String : Any]) {
     content = extras["data"] as? String ?? ""
   }

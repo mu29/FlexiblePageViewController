@@ -26,9 +26,10 @@ class MainViewController: UIViewController {
   }
 
   private func setPager() {
-    pageContainer = FlexiblePageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
+    pageContainer = FlexiblePageViewController()
     pageContainer.pageDataSource = self
     pageContainer.pageDelegate = self
+    pageContainer.numberOfItemsPerPage = 10
     pageContainer.didPageSelected = didPageSelected
     pageContainer.pageInfo = (storyboard: "Main", view: ContentViewController.self)
     view.addSubview(pageContainer.view)
@@ -63,5 +64,5 @@ extension MainViewController: FlexiblePageViewDataSource, FlexiblePageViewDelega
   func flexiblePageView(_ pageView: FlexiblePageViewController, lastIndex index: Int) {
     loadData(at: page)
   }
-  
+
 }
