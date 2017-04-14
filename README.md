@@ -1,9 +1,9 @@
 # FlexiblePageViewController
 
-[![CI Status](http://img.shields.io/travis/mu29/FlexiblePageViewController.svg?style=flat)](https://travis-ci.org/mu29/FlexiblePageViewController)
 [![Version](https://img.shields.io/cocoapods/v/FlexiblePageViewController.svg?style=flat)](http://cocoapods.org/pods/FlexiblePageViewController)
-[![License](https://img.shields.io/cocoapods/l/FlexiblePageViewController.svg?style=flat)](http://cocoapods.org/pods/FlexiblePageViewController)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/mu29/FlexiblePageViewController/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/FlexiblePageViewController.svg?style=flat)](http://cocoapods.org/pods/FlexiblePageViewController)
+[![Swift 3.1](https://img.shields.io/badge/Swift-3.1-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 UIPageViewController for processing arbitrary data
 
@@ -52,11 +52,7 @@ pageContainer.pageInfo = (storyboard: "Main", view: ContentViewController.self)
 ```
 
 
-## Example
-
-![](etc/example.gif)
-
-The example project loads and displays 10 pages at first. After passing the page several times, it loads next 10 items. (*pagination*)
+## Usage
 
 `MainViewController` that act as a pager:
 
@@ -148,9 +144,18 @@ class ContentViewController: UIViewController {
 }
 ```
 
+
+## Example
+
+<img src="etc/example.gif" width="400" />
+
+The example project loads and displays 10 pages at first.
+After passing the page several times, it loads next 10 items. (*pagination*)
+
 See full example [here](https://github.com/mu29/FlexiblePageViewController/blob/master/Example/FlexiblePageViewController).
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 
 ## APIs
 
