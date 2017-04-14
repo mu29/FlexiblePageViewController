@@ -1,6 +1,0 @@
-framework module FlexiblePageViewController {
-  umbrella header "FlexiblePageViewController-umbrella.h"
-
-  export *
-  module * { export * }
-}
